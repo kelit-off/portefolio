@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; } */
+        /* .glass { background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); border-radius: 12px; padding: 2rem; } */
+    </style>
+</head>
+<body class="bg-gradient-to-r from-purple-400 to-blue-700 text-white">
+    <div class="max-w-4xl mx-auto p-6">
+        <header class="text-center mb-10 fade-in">
+            <h1 class="text-5xl font-extrabold">Portfolio BTS SIO SLAM</h1>
+            <p class="text-lg opacity-80">Théo Killian</p>
+        </header>
+        
+        <section class="mb-10 fade-in glass">
+            <h2 class="text-3xl font-semibold">Présentation</h2>
+            <p class="mt-2">Je suis Théo Killian, étudiant en BTS SIO option SLAM. Passionné par le développement informatique, je souhaite mettre mes compétences au service d'entreprises innovantes.</p>
+        </section>
+        
+        <section class="mb-10 fade-in glass">
+            <h2 class="text-3xl font-semibold">Compétences Techniques</h2>
+            <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>Langages : <span class="font-bold">, Python, PHP, JavaScript, HTML, CSS</span></li>
+                <li>Frameworks : <span class="font-bold">Laravel, Symfony, React</span></li>
+                <li>Bases de données : <span class="font-bold">MySQL, MongoDB</span></li>
+                <li>Outils : <span class="font-bold">Git, Docker, VS Code</span></li>
+                <li>Méthodologies : <span class="font-bold">DevOps</span></li>
+            </ul>
+        </section>
+        
+        <section class="mb-10 fade-in glass">
+            <h2 class="text-3xl font-semibold">Projets Réalisés</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">Projet 1 : Questionnaire Intéractif</h3>
+                <p>Description : Un questionnaire permettant d'aide les Curiste a choisir le cure.</p>
+                <p>Technologies : PHP avancé, MySQL, Session, Bootstrap</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">Projet 2 : Système docker</h3>
+                <p>Description : Mise en place d'un système docker pour surveiller le changement de page web et envoie des alerte sur discord</p>
+                <p>Technologies : ChangeDetection, Selenium, Chrome-Driver</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">Projet 3 : Moteur de recherche</h3>
+                <p>Description : Un moteur de recherche qui respect les données de l'utilisateur du Made In France</p>
+                <p>Technologies : Python(BeautifulSoup), PHP(Laravel, tailwindcss), MongoDB, MySQL</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">Projet 4 : Hébergeur Web</h3>
+                <p>Description : Site web qui est sectionner avec des sous domaines pour le manager, le shop et le site vitrine</p>
+                <p>Technologies : PHP(Laravel, TailwindCss), Python(Offre web pour le système de gestion), MySQL</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">Projet 5 : Réseau Social</h3>
+                <p>Description : Un réseau social tourne pour les utilisateurs étant dans le domaine de l'IT</p>
+                <p>Technologies : PHP(Laravel, TailwindCss) et React, Python(Algorithme pour les posts), MySQL</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-medium">Projet 6 : Jeu web</h3>
+                <p>Description : Un jeu de gestion de companie aérienne réaliste et ouvert a tous, faisant découvrir au non passionne du monde l'aviation.</p>
+                <p>Technologies : PHP(Laravel, TailwindCSS), MySQL</p>
+            </div>
+        </section>
+        
+        <section class="mb-10 fade-in glass">
+            <h2 class="text-3xl font-semibold">Expériences Professionnelles</h2>
+            <p class="mt-2">Alternance - Bromacker (2023-2025)</p>
+            <p>Missions : Réalisation de petit update comme des filtre sur les choix, mais aussi un plus gros projet qui est un Questionnaire Intéractif</p>
+            <p>Compétences acquises : Gestion de projet, UX et UI</p>
+        </section>
+        
+        <section class="mb-10 fade-in glass">
+            <h2 class="text-3xl font-semibold">Certifications & Formations</h2>
+            <ul class="list-disc list-inside mt-2">
+                <li>Atelier RGPD</li>
+                <li>CyberSens</li>
+            </ul>
+        </section>
+        
+        <footer class="text-center mt-10 fade-in glass p-6">
+            <h2 class="text-3xl font-semibold">Contact</h2>
+            <p>Email : <a class="hover:underline hover:underline-offset-1" href="mailto:theo.killian5700@gmail.com">M'envoie un mail</a></p>
+            <p>LinkedIn : <a class="hover:underline hover:underline-offset-1" href="https://www.linkedin.com/in/th%C3%A9o-killian-79aa27242/">C'est ICI</a></p>
+            <p>GitHub : <a class="hover:underline hover:underline-offset-1" href="https://github.com/kelit-off">C'est ICI</a></p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            ScrollReveal().reveal('.fade-in', { distance: '50px', duration: 1000, easing: 'ease-in-out', origin: 'bottom', reset: false });
+        });
+    </script>
+</body>
+</html>
